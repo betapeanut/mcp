@@ -20,5 +20,8 @@ module.exports = {
         { text: "Uninstall", href: `${x}/uninstall.js` }
       ]
     }
+  }).concat({
+    text: "Update",
+    href: "update.json"
   })
 }
