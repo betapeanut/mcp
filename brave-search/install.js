@@ -3,6 +3,10 @@ module.exports = {
     darwin: "{{env.HOME}}/Library/Application Support/Claude/claude_desktop_config.json",
     win32: "{{path.resolve(env.APPDATA, 'Claude/claude_desktop_config.json')}}",
   },
+  pre: [{
+    env: "BRAVE_API_KEY",
+    description: "Brave search API key https://brave.com/search/api/"
+  }],
   run: async (kernel) => {
     return [
       {

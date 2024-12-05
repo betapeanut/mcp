@@ -3,6 +3,10 @@ module.exports = {
     darwin: "{{env.HOME}}/Library/Application Support/Claude/claude_desktop_config.json",
     win32: "{{path.resolve(env.APPDATA, 'Claude/claude_desktop_config.json')}}",
   },
+  pre: [{
+    env: "GITHUB_PERSONAL_ACCESS_TOKEN",
+    description: "Github api access token ",
+  }],
   run: [
     {
       method: "json.set",
