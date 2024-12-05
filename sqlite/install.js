@@ -30,7 +30,7 @@ module.exports = {
             "args": [
               "mcp-server-sqlite",
               "--db-path",
-              "{{path.resolve(cwd, env.SQLITE_FILE_NAME')}}"
+              "{{path.resolve(cwd, env.SQLITE_FILE_NAME)}}"
             ]
           },
         }
