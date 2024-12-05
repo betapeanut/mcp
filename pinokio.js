@@ -2,7 +2,7 @@ module.exports = {
   version: "2.2",
   title: "MCP",
   description: "",
-  type: "task",
+  icon: "icon.png",
   menu: [
     "fetch",
     "github",
